@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible"
+		content="IE=edge">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0">
+	<title>
+		Build a Survey Form using HTML and CSS
+	</title>
+
+	<style>
+
+		body {
+			background-color: rgb(61, 122, 236);
+			font-family: Verdana;
+			text-align: center;
+		}
+
+        h1,p{
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+		form {
+			background-color: #fff;
+			max-width: 500px;
+			margin: 50px auto;
+			padding: 30px 20px;
+			box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+		}
+
+		.form-control {
+			text-align: left;
+			margin-bottom: 25px;
+		}
+
+		.form-control label {
+			display: block;
+			margin-bottom: 10px;
+		}
+		
+		.form-control textarea {
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			padding: 10px;
+			height: 100px;
+			width: 95%;
+		}
+
+        #label-name{
+            display: inline-block;
+            margin-right: 200px;
+            
+        }
+        #name{
+            display: inline-block;
+            margin-right: 80px;
+            height: 30px;
+            
+        }
+
+		.form-control input[type="radio"]
+		{
+			display: inline-block;
+			width: auto;
+		}
+
+		button {
+			background-color: rgb(61, 122, 236);
+			font-family: inherit;
+			font-size: 21px;
+			display: block;
+			width: 25%;
+            height: 50px;
+		}    
+
+	</style>
+</head>
+
+<body>
+	<h1>Customer Survey Form</h1>
+
+	<form id="form">
+
+		<div class="form-control">
+			<label for="name" id="label-name">Name</label> 
+            <label for="email" id="label-name">Email</label>
+		
+			<input type="text" id="name"/>
+			<input type="email" id="name"/>
+		</div>
+
+		<div class="form-control">
+			<label>Is this first time You are using our products & services?</label>
+
+			<label for="recommed-1">
+				<input type="radio"  name="recommed">Yes</input>
+                <input type="radio"  name="recommed">No</input>
+			</label> 
+		
+		</div>
+
+        <div class="form-control">
+			<label>Would you suggest to your friends and colleague?</label>
+
+			<label for="recommed-1">
+				<input type="radio"  name="recommed1">Yes</input>
+                <input type="radio"  name="recommed1">No</input>
+			</label> 
+		
+		</div>
+
+        <div class="form-control">
+			<label>How satisfied are you with our company overall?</label>
+
+			<label for="recommed-1">
+				<input type="radio"  name="recommed2">Satisfied</input>
+                <input type="radio"  name="recommed2">Undecided</input>
+                <input type="radio"  name="recommed2">Unsatisfied</input>
+			</label> 
+		
+		</div>
+
+		<div class="form-control">
+			<label for="comment">Do you have any suggestion to improve our services?</label>
+
+			<textarea name="comment" id="comment" ></textarea>
+		</div>
+
+		<button type="submit" value="submit"> Submit </button>
+	</form>
+
+    <p>2023 customer Survey Form. All Rights Reserved | Design by kumar</p>
+</body>
+</html>
